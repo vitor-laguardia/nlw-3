@@ -1,0 +1,17 @@
+/*Cascata significa que o último termo escrito predominará. Porém se o style for aplicado diretamente como atributo na tag, ele predominará. Além disso sempre o mais específico predomina.*/
+/*Sempre me refiro a funções como function();*/
+* { /*seletor global*/
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh; /*fracionamos 100 pedacinhos. Ocupe tudo*/
+    color: white;
+}
+
+#page-landing {
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%); 
+    min-height: 100vh;
+    text-align: center; 
+}
+
