@@ -1,0 +1,49 @@
+
+#page-landing {
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%); 
+    min-height: 100vh;
+    text-align: center; 
+    display: flex; /*Deixar os elementos flexiveis. Para centralizarmos verticalmente o conteúdo, poderíamos usar align-itens:center;*/
+}
+
+#container {
+    margin: auto;
+    width: 90%; /*Utilizamos essa propriedade para aumentar a margin horizontal. Antes não havia tamanho definido e ele utilizava 100% do espaço horizontal da tela*/
+}
+
+.location, h1, .visit p {
+    height: 16vh;
+}
+
+.visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+    border: none;
+    border-radius: 3rem; /*Curvatura, arredondamento*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /*Como o elemento anterior ao a(.visit) nao possui display flex, o margin auto funcionará apenas na horizontal*/
+}
+
+#logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms;
+}
+
+main h1 {
+    animation-delay: 150ms;
+}
+
+.visit p {
+    animation-delay: 200ms;
+}
+
+.visit a {
+    animation-delay: 250ms;
+}
+

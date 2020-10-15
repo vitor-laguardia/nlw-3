@@ -1,0 +1,22 @@
+/*Animações*/
+
+@keyframes up { /*Nome da animação: up*/
+    from{
+        opacity: 0;
+        transform: translatey(16px); /*abaixo do eixo x temos pixels positivos, e acima temos negativos. Começa de baixo e vai pra cima*/
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0px);
+
+    }
+}
+
+.animate-up{
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards; /*Acabando a transição from para to, ele irá permanecer em to*/ 
+}
+
+
