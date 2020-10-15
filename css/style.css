@@ -1,5 +1,6 @@
 /*Cascata significa que o último termo escrito predominará. Porém se o style for aplicado diretamente como atributo na tag, ele predominará. Além disso sempre o mais específico predomina.*/
 /*Sempre me refiro a funções como function();*/
+
 * { /*seletor global*/
     margin: 0;
     padding: 0;
@@ -33,4 +34,16 @@ body, input, button, textarea {
 
 .location, h1, .visit p {
     height: 16vh;
+}
+
+.visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+    border: none;
+    border-radius: 3rem; /*Curvatura, arredondamento*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /*Como o elemento anterior ao a(.visit) nao possui display flex, o margin auto funcionará apenas na horizontal*/
 }
