@@ -25,6 +25,11 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto; /*Como o elemento anterior ao a(.visit) nao possui display flex, o margin auto funcionará apenas na horizontal*/
+    transition: background 200ms;
+}
+
+.visit a:hover {
+    background: #96feff;    
 }
 
 #logo {
