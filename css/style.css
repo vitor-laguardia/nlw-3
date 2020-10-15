@@ -9,9 +9,16 @@ body {
     color: white;
 }
 
-body, input, button, textarea {
-    font: 400 18px/1 'Nunito', sans-serif;
+:root { /*elemento raíz (html) Vantagem: controlar tamanho das fontes apenas modificando um parâmetro*/
+    font-size:62.5%; /*100% --- 16px*/
 }
+
+body, input, button, textarea {
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+}
+
+/*Seção explicando rm e em*/
+/*Se usamos em, significa que o browser irá buscar o elemento paie fará o cálculo baseado nele. Se usamos rem, significa root element, logo ele irá fazer o cálculo baseado na tag html(tamanho da fonte do html)*/
 
 #page-landing {
     background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%); 
