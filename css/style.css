@@ -24,5 +24,13 @@ body, input, button, textarea {
     background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%); 
     min-height: 100vh;
     text-align: center; 
+    display: flex; /*Deixar os elementos flexiveis. Para centralizarmos verticalmente o conteúdo, poderíamos usar align-itens:center;*/
 }
 
+#container {
+    margin: auto;
+}
+
+.location, h1, .visit p {
+    height: 16vh;
+}
