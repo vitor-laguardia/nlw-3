@@ -30,6 +30,7 @@ body, input, button, textarea {
 
 #container {
     margin: auto;
+    width: 90%; /*Utilizamos essa propriedade para aumentar a margin horizontal. Antes não havia tamanho definido e ele utilizava 100% do espaço horizontal da tela*/
 }
 
 .location, h1, .visit p {
