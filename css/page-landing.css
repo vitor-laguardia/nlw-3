@@ -78,9 +78,19 @@ main h1 {
         margin clamp(10%, 9vh, 12%) 0 4rem;
     }
     
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
     .visit p {
         line-height: 1.5;
         width: clamp(20rem, 20vw, 30rem); 
         font-size: 2.4rem;
+    }
+    
+    .visit a {
+        margin: initial;
     }
 }
