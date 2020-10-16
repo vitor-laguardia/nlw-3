@@ -41,7 +41,7 @@ main h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; /*Como o elemento anterior ao a(.visit) nao possui display flex, o margin auto funcionará apenas na horizontal*/
+    margin: auto; /*Como o elemento anterior ao a(.visit) nao possui display flex, o margin auto funcionará apenas na horizontal*/
     transition: background 200ms;
     animation-delay: 250ms;
 
@@ -54,6 +54,15 @@ main h1 {
 /* Desktop version */
 
 @media (min-width: 760px) {/*se o dispositivo estiver acima de 760px aplique os atributos*/
+    
+    #container {
+        /* background: image repeat position / size*/
+        background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 44vw, 45rem);
+        /*background-position(x, y): top(y) center(x) não irá cortar em y*/
+        /*right(x) center. Se colocar um valor aplica tanto x quanto y*/
+        padding: 5rem 2rem; /*Para resolver corte da imagem*/
+    }
+
     header {
         display: flex;
         align-items: center;
