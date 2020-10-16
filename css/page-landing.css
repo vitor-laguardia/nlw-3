@@ -8,11 +8,13 @@
 
 #container {
     margin: auto;
-    width: 90%; /*Utilizamos essa propriedade para aumentar a margin horizontal. Antes não havia tamanho definido e ele utilizava 100% do espaço horizontal da tela*/
+   /* width: 90%;*/ /*Utilizamos essa propriedade para aumentar a margin horizontal. Antes não havia tamanho definido e ele utilizava 100% do espaço horizontal da tela*/
+    width: min(90%, 112rem); /*Se 112rem for menor que 90%, então aplique o 90%. Caso 90% seja maior que 112rem, então o limite será 112rem. Outra maneira de pensar é que a função pegará sempre o valor mínimo entre esses 2 valores*/
 }
 
 .location, h1, .visit p {
     height: 16vh;
+    text-align: initial; /*para alinhamento vertical*/
 }
 
 .visit a {
