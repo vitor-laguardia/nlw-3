@@ -52,3 +52,16 @@ main h1 {
     animation-delay: 250ms;
 }
 
+/* Desktop version */
+
+@media (min-width: 760px) {/*se o dispositivo estiver acima de 760px aplique os atributos*/
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .location, h1, .visit p {
+        height: initial; /*valor antes de aplicarmos css*/
+    }
+}
