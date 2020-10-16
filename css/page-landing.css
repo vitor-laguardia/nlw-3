@@ -1,4 +1,3 @@
-
 #page-landing {
     background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%); 
     min-height: 100vh;
@@ -14,28 +13,6 @@
 
 .location, h1, .visit p {
     height: 16vh;
-    text-align: initial; /*para alinhamento vertical*/
-}
-
-.location {
-    text-align: right;
-}
-
-.visit a {
-    width: 8rem;
-    height: 8rem;
-    background: #ffd666;
-    border: none;
-    border-radius: 3rem; /*Curvatura, arredondamento*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; /*Como o elemento anterior ao a(.visit) nao possui display flex, o margin auto funcionará apenas na horizontal*/
-    transition: background 200ms;
-}
-
-.visit a:hover {
-    background: #96feff;    
 }
 
 #logo {
@@ -49,7 +26,6 @@
 main h1 {
     animation-delay: 150ms;
     font-size: clamp(4rem, 8vw, 8.4rem); /*defino limite inferior, superior e ideal*/
-    width: min(300px, 80%);
 }
 
 .visit p {
@@ -57,7 +33,22 @@ main h1 {
 }
 
 .visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+    border: none;
+    border-radius: 3rem; /*Curvatura, arredondamento*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /*Como o elemento anterior ao a(.visit) nao possui display flex, o margin auto funcionará apenas na horizontal*/
+    transition: background 200ms;
     animation-delay: 250ms;
+
+}
+
+.visit a:hover {
+    background: #96feff;    
 }
 
 /* Desktop version */
@@ -71,5 +62,15 @@ main h1 {
 
     .location, h1, .visit p {
         height: initial; /*valor antes de aplicarmos css*/
+        text-align: initial; /*para alinhamento vertical*/
+    }
+
+    .location {
+        text-align: right;
+    }
+
+    main h1 {
+        font-weight: bold;
+        width: min(300px, 80%);
     }
 }
